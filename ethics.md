@@ -4,12 +4,12 @@ If you have not yet, `git clone` Homework 5 and read its instructions (in README
 ## (Answer before group discussion) Stakeholder-value analysis
 
 
-## Stakeholder-value Matrix
+### 1: Stakeholder-value Matrix
 
 Please put a stakeholder-value matrix for fingerprint-based login systems. Include at least three stakeholders and at least three values, one of which should be Privacy.
 
 
-## Login System Parameter Selection Rationale  
+### 2: Login System Parameter Selection Rationale  
 
 Explain how you decided on your default values for the maximum number of tries and the error threshold. Why did you choose these particular thresholds? How do they balance security, usability, and fairness?
 
