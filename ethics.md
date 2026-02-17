@@ -6,7 +6,13 @@ If you have not yet, `git clone` Homework 5 and read its instructions (in README
 
 ### 1: Stakeholder-value Matrix
 
-Please put a stakeholder-value matrix for fingerprint-based login systems. Include at least three stakeholders and at least three values, one of which should be Privacy.
+Please fill out this stakeholder-value matrix for fingerprint-based login systems. Use the provided values. Include at least three stakeholders.
+
+|  | Security | Usability | Fairness |
+| - | - | - | - |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
 
 
 ### 2: Login System Parameter Selection Rationale  
