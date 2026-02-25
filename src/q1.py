@@ -37,7 +37,8 @@ class Vector3D:
             other (Vector3D): Another Vector3D object to calculate the distance to.
         
         Returns:
-            float: The distance between the two vectors.
+            float: The distance between the two vectors, if other is a Vector3D.
+                    If other is not a Vector3D, returns False.
         """
         dist_squared = (self._x - other._x) ** 2 + (self._y - other._y) ** 2 + (self._z - other._z) ** 2
         return math.sqrt(dist_squared)
