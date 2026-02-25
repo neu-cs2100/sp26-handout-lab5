@@ -10,7 +10,7 @@ Use the MAX_DISTANCE constant provided.
 
 import math
 
-MAX_DISTANCE = 0.01
+MAX_DISTANCE = 0.01 # maximum distance for two Vector3Ds to be considered equal
 
 class Vector3D:
     """
