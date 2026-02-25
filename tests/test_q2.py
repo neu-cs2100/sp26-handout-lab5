@@ -16,7 +16,7 @@ class TestSocialMediaUser(unittest.TestCase):
         """Test that the user_id property is read-only."""
         user = SocialMediaUser("123", "testuser")
         with self.assertRaises(AttributeError):
-            user.user_id = "456"
+            user.user_id = "456" # type: ignore[misc]
 
     def test_username_too_short(self) -> None:
         """Test that a username less than 3 characters raises a ValueError."""
