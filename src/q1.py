@@ -7,7 +7,7 @@ Please implement and test the __eq__() method for the following class.
 Two Vector3D objects are considered equal if the distance between them is less than 0.01.
 Use the MAX_DISTANCE constant provided.
 """
-
+from __future__ import annotations
 import math
 
 MAX_DISTANCE = 0.01 # maximum distance for two Vector3Ds to be considered equal
@@ -29,7 +29,22 @@ class Vector3D:
         self._y = y
         self._z = z
 
-    def distance_between(self, other: 'Vector3D') -> float:
+    @property
+    def x(self) -> float:
+        """Returns the x-coordinate of the vector."""
+        return self._x
+
+    @property
+    def y(self) -> float:
+        """Returns the y-coordinate of the vector."""
+        return self._y
+
+    @property
+    def z(self) -> float:
+        """Returns the z-coordinate of the vector."""
+        return self._z
+
+    def distance_between(self, other: Vector3D) -> float:
         """
         Returns the distance between this vector and another Vector3D object.
         
@@ -40,7 +55,7 @@ class Vector3D:
             float: The distance between the two vectors, if other is a Vector3D.
                     If other is not a Vector3D, returns False.
         """
-        dist_squared = (self._x - other._x) ** 2 + (self._y - other._y) ** 2 + (self._z - other._z) ** 2
+        dist_squared = (self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2
         return math.sqrt(dist_squared)
 
     def __eq__(self, other: object) -> bool:

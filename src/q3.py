@@ -7,7 +7,7 @@ from_timestamp is also provided as an example.
 
 Make sure to test your from_string constructor.
 """
-
+from __future__ import annotations
 import datetime
 
 class Date:
@@ -25,9 +25,9 @@ class Date:
         self.year = year
         self.month = month
         self.day = day
-    
+
     @classmethod
-    def from_timestamp(cls, timestamp: float) -> "Date":
+    def from_timestamp(cls, timestamp: float) -> Date:
         """
         Create Date from Unix timestamp
 
@@ -39,9 +39,9 @@ class Date:
         """
         dt = datetime.datetime.fromtimestamp(timestamp)
         return cls(dt.year, dt.month, dt.day)
-    
+
     @classmethod
-    def from_string(cls, date_string: str) -> "Date":
+    def from_string(cls, date_string: str) -> Date:
         """
         Create Date from string formatted like 'YYYY-MM-DD'
         
