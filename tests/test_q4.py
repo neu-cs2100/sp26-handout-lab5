@@ -2,6 +2,8 @@
 Lab 5 Question 4 tests
 
 You should test that the class and instance variables work correctly in the Counter class.
+
+Your tests should check the instance_number AND the count.
 """
 
 import unittest
