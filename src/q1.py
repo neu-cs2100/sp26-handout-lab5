@@ -25,11 +25,11 @@ class Vector3D:
             y (float): The y-coordinate of the vector.
             z (float): The z-coordinate of the vector.
         """
-        self.x = x
-        self.y = y
-        self.z = z
+        self._x = x
+        self._y = y
+        self._z = z
 
-    def _distance_between(self, other: 'Vector3D') -> float:
+    def distance_between(self, other: 'Vector3D') -> float:
         """
         Returns the distance between this vector and another Vector3D object.
         
@@ -39,7 +39,7 @@ class Vector3D:
         Returns:
             float: The distance between the two vectors.
         """
-        dist_squared = (self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2
+        dist_squared = (self._x - other._x) ** 2 + (self._y - other._y) ** 2 + (self._z - other._z) ** 2
         return math.sqrt(dist_squared)
 
     def __eq__(self, other: object) -> bool:
