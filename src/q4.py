@@ -20,8 +20,13 @@ class Counter:
 
     def __init__(self) -> None:
         """Increase the number of instances of Counter objects."""
-        self.instance_number: int = Counter.count  # Instance variable to store the instance number
+        self._instance_number: int = Counter.count  # Instance variable to store the instance number
         Counter.count += 1  # Increment the class variable count whenever a new instance is created
+    
+    @property
+    def instance_number(self) -> int:
+        """Returns the instance number of the Counter object."""
+        return self._instance_number
     
     @classmethod
     def reset_count(cls) -> None:

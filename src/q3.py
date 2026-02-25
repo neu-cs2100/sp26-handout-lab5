@@ -50,5 +50,9 @@ class Date:
         
         Returns:
             Date: A new Date (instance of this class) created from the provided string
+        
+        Raises:
+            ValueError: If the date_string does not contain two hyphens, or if the year, 
+                    month, or day cannot be converted to integers.
         """
         #TODO: Implement and test
