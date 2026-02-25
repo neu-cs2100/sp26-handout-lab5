@@ -37,7 +37,7 @@ class Date:
         Returns:
             Date: A new Date (instance of this class) created from the provided timestamp
         """
-        dt = datetime.datetime.fromtimestamp(timestamp)
+        dt = datetime.datetime.fromtimestamp(timestamp, tz=datetime.timezone.utc)
         return cls(dt.year, dt.month, dt.day)
 
     @classmethod
