@@ -27,7 +27,7 @@ class Course:
         self.course_number = course_number
         self.name = name
         self.max_students = max_students
-        self.students: list[str] = []
+        self.__students: list[str] = []
 
     def enroll(self, student_id: str) -> None:
         """
