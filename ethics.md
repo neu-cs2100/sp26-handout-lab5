@@ -24,6 +24,4 @@ Explain how you decided on your default values for the maximum number of tries a
 
 1. What is one stakeholder that one of your group members included, which you did not?
 
-2. What is one value that one of your group members included, which you did not?
-
-3. Did any of your group members choose a different maximum number of tries, or a different error threshold? How does your reasoning for deciding these values differ from theirs?
+2. Did any of your group members choose a different maximum number of tries, or a different error threshold? How does your reasoning for deciding these values differ from theirs?
